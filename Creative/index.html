@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voyage émotionnel</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/MotionPathPlugin.min.js"></script>
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">Voyage Émotionnel</div>
+        <ul class="nav-links">
+            <li><a href="#section1">Joie</a></li>
+            <li><a href="#section2">Sérénité</a></li>
+            <li><a href="#section3">Stress</a></li>
+            <li><a href="#section4">Peur</a></li>
+        </ul>
+        <div class="burger">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+        </div>
+    </nav>
+
+    <div class="section" id="section1">
+        <div class="sun" id="sun"></div>
+        
+        <div class="bird-container" id="bird">
+            <div class="bird">
+                <div class="bird-body"></div>
+                <div class="bird-wing left"></div>
+                <div class="bird-wing right"></div>
+                <div class="bird-head"></div>
+                <div class="bird-beak"></div>
+            </div>
+        </div>
+        
+        <div class="emotion-badge">JOIE</div>
+        <div class="text-container">
+            <h2>L'élan de la joie</h2>
+            <p>Ces moments lumineux où l'esprit s'élève et tout semble possible.</p>
+        </div>
+        <div class="mood-buttons">
+            <button class="mood-button" id="mood-happy">
+                <span class="emoji">😄</span>
+                Heureux
+                <span class="mood-text">Le bonheur illumine ma journée</span>
+            </button>
+            <button class="mood-button" id="mood-excited">
+                <span class="emoji">🤩</span>
+                Excité
+                <span class="mood-text">Je déborde d'énergie positive</span>
+            </button>
+            <button class="mood-button" id="mood-content">
+                <span class="emoji">😊</span>
+                Content
+                <span class="mood-text">Une douce satisfaction m'envahit</span>
+            </button>
+        </div>
+    </div>
+    
+
+    <div class="section" id="section2">
+        <div class="emotion-badge">SÉRÉNITÉ</div>
+        <div class="text-container">
+            <h2>La force tranquille</h2>
+            <p>Quand le jour s'estompe, la stabilité devient notre ancrage.</p>
+        </div>
+        <div class="mood-buttons">
+            <button class="mood-button" id="mood-calm">
+                <span class="emoji">😌</span>
+                Calme
+                <span class="mood-text">Mon esprit est paisible et clair</span>
+            </button>
+            <button class="mood-button" id="mood-peaceful">
+                <span class="emoji">🧘</span>
+                Serein
+                <span class="mood-text">Un sentiment de paix m'enveloppe</span>
+            </button>
+            <button class="mood-button" id="mood-balanced">
+                <span class="emoji">⚖️</span>
+                Équilibré
+                <span class="mood-text">Harmonie entre corps et esprit</span>
+            </button>
+        </div>
+    </div>
+
+
+    <div class="section" id="section3">
+        <div class="emotion-badge">STRESS</div>
+        <div class="text-container">
+            <h2>L'inquiétude monte</h2>
+            <p>L'anxiété s'installe comme la marée montante, envahissant lentement l'esprit.</p>
+        </div>
+        
+        <div class="waves"></div>
+        <img src="https://www.pngmart.com/files/22/Boat-PNG-HD-Isolated.png" class="boat">
+        
+     
+        
+        <div class="mood-buttons">
+            <button class="mood-button" id="mood-anxious">
+                <span class="emoji">😰</span>
+                Anxieux
+                <span class="mood-text">Je sens la pression monter</span>
+            </button>
+            <button class="mood-button" id="mood-worried">
+                <span class="emoji">😟</span>
+                Inquiet
+                <span class="mood-text">Les pensées tournent en boucle</span>
+            </button>
+            <button class="mood-button" id="mood-nervous">
+                <span class="emoji">😬</span>
+                Nerveux
+                <span class="mood-text">Je ne peux pas me détendre</span>
+            </button>
+        </div>
+    </div>
+    
+
+    <div class="section" id="section4">
+        <div class="deep-ocean">
+            <div class="particles"></div>
+            <div class="flashlight-overlay"></div>
+            <img src="https://pngimg.com/uploads/coral_reef/coral_reef_PNG53.png" class="deep-element coral-1">
+            <img src="https://www.pngall.com/wp-content/uploads/5/Angler-Fish-PNG-Image.png" class="deep-element angler-fish">
+            <img src="https://freepngimg.com/thumb/jellyfish/22850-8-jellyfish-transparent.png" class="deep-element jellyfish">
+        </div>
+        
+        <div class="emotion-badge">PEUR</div>
+        <div class="text-container">
+            <h2>L'obscurité intérieure</h2>
+            <p>Dans les abysses de l'esprit, les peurs deviennent des monstres.</p>
+        </div>
+        
+    
+        
+        <div class="mood-buttons">
+            <button class="mood-button" id="mood-scared">
+                <span class="emoji">😨</span>
+                Effrayé
+                <span class="mood-text">La peur paralyse mes pensées</span>
+            </button>
+            <button class="mood-button" id="mood-terrified">
+                <span class="emoji">😱</span>
+                Terrorisé
+                <span class="mood-text">Je me sens submergé par la terreur</span>
+            </button>
+            <button class="mood-button" id="mood-uneasy">
+                <span class="emoji">😖</span>
+                Mal à l'aise
+                <span class="mood-text">Un sentiment d'inquiétude profonde</span>
+            </button>
+        </div>
+    </div>
+    
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <h3>Voyage Émotionnel</h3>
+                <p>Explorer la richesse de nos émotions</p>
+            </div>
+            <div class="footer-links">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="#section1">Joie</a></li>
+                    <li><a href="#section2">Sérénité</a></li>
+                    <li><a href="#section3">Stress</a></li>
+                    <li><a href="#section4">Peur</a></li>
+                </ul>
+            </div>
+            <div class="footer-contact">
+                <h4>Contact</h4>
+                <p>contact@voyage-emotionnel.fr</p>
+                <div class="social-icons">
+                    <a href="#" class="social-icon">FB</a>
+                    <a href="#" class="social-icon">TW</a>
+                    <a href="#" class="social-icon">IG</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2023 Voyage Émotionnel. Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
